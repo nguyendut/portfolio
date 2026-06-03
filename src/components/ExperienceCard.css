@@ -1,0 +1,81 @@
+.experience-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.card-subtitle {
+  margin: 4px 0 0 0;
+  font-size: 0.9rem;
+  color: #334155;
+}
+
+.card-dates {
+  font-size: 0.85rem;
+  color: #475569;
+  white-space: nowrap;
+}
+
+.card-description {
+  margin: 12px 0 0 0;
+  color: #334155;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.card-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.skill-tag {
+  display: inline-block;
+  background: #e2e8f0;
+  color: #1e293b;
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .experience-card {
+    padding: 18px;
+  }
+
+  .card-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .card-dates {
+    white-space: normal;
+  }
+}
